@@ -1,69 +1,107 @@
-# Network Port Scanner & Banner Grabber
+# 🚀 Network Port Scanner & Banner Grabber
 
-A multi-page Streamlit application with user sign-up, login, dashboard navigation, theme switching, persistent scan history, and a faster multi-threaded TCP scanner.
+A professional **Python-based Network Port Scanner & Banner Grabber** built with **Streamlit**. The application enables users to scan hosts for open TCP ports, identify running services through banner grabbing, and maintain a persistent scan history using SQLite.
 
-## Features
+---
 
-- Sign-up page followed by a login page with sign-in button
-- Dashboard page shown immediately after login
-- Logout button and stored user session state
-- Scan a target host across a TCP port range
-- Optional banner grabbing for open ports
-- Multi-threaded backend scanning for much faster execution
-- Live progress updates during a scan
-- Summary cards, detailed port inspection, and stored scan history
-- Export results as CSV or JSON
-- Theme switch between a white executive look and a dark cyber look
-- Local SQLite database for users and saved scan results
+## 📌 Features
 
-## Requirements
+- 🔐 User Registration & Login Authentication
+- 🌐 Multi-threaded TCP Port Scanning
+- 📡 Banner Grabbing for Service Detection
+- 📊 Interactive Dashboard
+- 💾 SQLite Database for Persistent Scan History
+- 🌙 Light/Dark Theme Support
+- ⚡ Fast and Responsive Streamlit Interface
+- 📈 Scan Results with Port Status and Service Information
 
-- Python 3.10+
-- Streamlit
+---
 
-## Install
+## 🛠️ Tech Stack
 
-```powershell
+- **Language:** Python 3.x
+- **Framework:** Streamlit
+- **Database:** SQLite
+- **Networking:** Python Socket Library
+- **Concurrency:** ThreadPoolExecutor (Multithreading)
+
+---
+
+## 📂 Project Structure
+
+```
+Network-Port-Scanner-Banner-Grabber/
+│
+├── app.py                 # Main Streamlit application
+├── scanner.py             # Port scanning and banner grabbing logic
+├── database.py            # SQLite database operations
+├── utils.py               # Helper functions
+├── requirements.txt       # Project dependencies
+├── README.md              # Documentation
+└── scanner_app.db         # SQLite database
+```
+
+---
+
+## 🚀 Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Network-Port-Scanner-Banner-Grabber.git
+
+cd Network-Port-Scanner-Banner-Grabber
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-## Run
+### Run the Application
 
-```powershell
+```bash
 streamlit run app.py
 ```
 
-## Default Flow
+---
 
-1. Open the app and create a user account on the sign-up page.
-2. Go to the login page and sign in.
-3. After login, the app opens the dashboard.
-4. Click `Open Scan Center` to go to the scanning page.
-5. Enter host/IP, start port, end port, timeout, and thread count.
-6. Run the scan and review the detection table, port details, exports, and stored history.
+## 📖 How to Use
 
-## Suggested Local Demo
+1. Register a new account.
+2. Log in to the application.
+3. Enter the target IP address or domain.
+4. Specify the port range.
+5. Start the scan.
+6. View:
+   - Open Ports
+   - Service Banners
+   - Scan History
 
-1. Start a local HTTP service in another terminal:
+---
 
-```powershell
-python -m http.server 8080
-```
+## 🎯 Key Functionalities
 
-2. Launch the app:
+- Detect open TCP ports
+- Perform banner grabbing
+- Store scan history
+- User authentication
+- Dashboard interface
+- Fast multi-threaded scanning
 
-```powershell
-streamlit run app.py
-```
 
-3. Use these scan settings:
+---
 
-- Host: `127.0.0.1`
-- Start port: `8000`
-- End port: `8085`
-- Parallel threads: `80` or higher
-- Banner grabbing: enabled
+## ⚠️ Disclaimer
 
-## Safety Note
+This project is intended **for educational purposes and authorized security testing only**. Do not use it against systems without proper permission.
 
-Use this tool only on systems you own or are explicitly authorized to test.
+---
+
+## 👨‍💻 Author
+
+**Pranith G**
+
+GitHub: https://github.com/Pranith-g
+
