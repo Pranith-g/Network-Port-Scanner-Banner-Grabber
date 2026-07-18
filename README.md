@@ -77,7 +77,7 @@ streamlit run app.py
 6. View:
    - Open Ports
    - Service Banners
-   - Scan History
+   - Scan 
 
 ---
 
