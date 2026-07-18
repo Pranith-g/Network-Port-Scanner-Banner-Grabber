@@ -1,4 +1,4 @@
-# 🚀 Network Port Scanner & Banner Grabber
+# 🚀 Network Port Scanner & Banner Grabbe
 
 A professional **Python-based Network Port Scanner & Banner Grabber** built with **Streamlit**. The application enables users to scan hosts for open TCP ports, identify running services through banner grabbing, and maintain a persistent scan history using SQLite.
 
